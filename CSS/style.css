@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-link {
+    display: block;
+    overflow: hidden;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
